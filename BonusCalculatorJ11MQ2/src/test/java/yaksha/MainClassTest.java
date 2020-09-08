@@ -10,6 +10,19 @@ import java.util.TreeMap;
 import org.junit.jupiter.api.Test;
 
 class MainClassTest {
+
+	@Test
+	public void testExceptionConditon() throws Exception {
+
+		TestUtils.yakshaAssert(TestUtils.currentTest(), true, TestUtils.boundaryTestFile);
+	}
+
+	@Test
+	public void testBoundaryCondition() throws Exception {
+
+		TestUtils.yakshaAssert(TestUtils.currentTest(), true, TestUtils.exceptionTestFile);
+	}
+
 	@Test
 	void testCalculateBonus() throws Exception {
 		// Test will pass
