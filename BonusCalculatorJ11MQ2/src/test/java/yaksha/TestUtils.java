@@ -12,16 +12,13 @@ public class TestUtils {
 	static {
 		businessTestFile = new File("./output_revised.txt");
 		businessTestFile.delete();
-
 		boundaryTestFile = new File("./output_boundary_revised.txt");
 		boundaryTestFile.delete();
-
 		exceptionTestFile = new File("./output_exception_revised.txt");
 		exceptionTestFile.delete();
 	}
 
 	public static void yakshaAssert(String testName, Object result, File file) throws IOException {
-
 		System.out.println("\n" + testName + "=" + result);
 		FileWriter writer = new FileWriter(file, true);
 		writer.append("\n" + testName + "=" + result);

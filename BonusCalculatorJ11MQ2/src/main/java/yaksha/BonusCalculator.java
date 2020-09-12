@@ -36,7 +36,6 @@ public class BonusCalculator {
 					age--;
 				else if (m1 == m2 && day1 < day2)
 					age--;
-				hm1.put(2020, 14400);/////
 				if (hm1.get(y) < 5000) {
 					hm2.put(y, -200);
 				} else if ((age < 25 || age > 60) && hm1.get(y) < 5000)
