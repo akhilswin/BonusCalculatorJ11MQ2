@@ -1,2 +1,2 @@
 
-testCalculateBonus=false
+testCalculateBonus=true
